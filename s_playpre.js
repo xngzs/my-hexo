@@ -116,7 +116,7 @@ function __cb_getplay_url(){
     //
     const _url = window.location.href;
     const _rand = Math.random();
-    var _getplay_url = (_url.replace(/.*\/play\/(\d{8})-(\d+?)-(\d+?)\.html.*/, '/_getplay?aid=$1&playindex=$2&epindex=$3') + '&r=' + _rand);
+    var _getplay_url = (_url.replace(/.*\/play\/(\d{8})-(\d+?)-(\d+?)\.html.*/, 'https://service-midrsm78-1252136279.hk.apigw.tencentcs.com/release/dai?url=https://www.agefans.live/_getplay?aid=$1&playindex=$2&epindex=$3') + '&r=' + _rand);
     //
     var re_resl = _getplay_url.match(/[&?]+epindex=(\d+)/);
     const hf_epi = ('' + FEI2(re_resl[1]));
